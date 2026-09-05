@@ -2,7 +2,7 @@
 
 import React, { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Float, TorusKnot, Box, Sphere } from "@react-three/drei";
+import { Float } from "@react-three/drei";
 import * as THREE from "three";
 import { WebGLCanvas } from "./WebGLCanvas";
 

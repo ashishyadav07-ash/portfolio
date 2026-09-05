@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { Network, ArrowUpRight, ShieldCheck, Check } from "lucide-react";
+import { Network } from "lucide-react";
 import { ApiNetwork3D } from "../3d/ApiNetwork3D";
 import { useSoundEffects } from "../ui/SoundController";
 

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ArrowRight, CheckCircle2, Cpu, Database, Server, Layers, ShieldCheck } from "lucide-react";
+import { X, ArrowRight, CheckCircle2, Cpu, Server, ShieldCheck } from "lucide-react";
 import { SystemCapability } from "@/data/capabilities";
 import { useSoundEffects } from "./SoundController";
 

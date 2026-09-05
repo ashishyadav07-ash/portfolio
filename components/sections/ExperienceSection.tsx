@@ -97,7 +97,7 @@ export const ExperienceSection: React.FC = () => {
               <div className="min-w-0">
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <span className={`font-mono text-xs font-bold ${activeAccent.color} ${activeAccent.bg} px-3.5 py-1 rounded-full border ${activeAccent.border}`}>
-                    CHAPTER {currentItem.chapter} // {currentItem.period}
+                    {`CHAPTER ${currentItem.chapter} // ${currentItem.period}`}
                   </span>
                   <span className="text-xs font-mono text-deepInk/60 flex items-center gap-1.5 font-bold">
                     <MapPin className="w-3.5 h-3.5" />

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowUpRight, Plus, Minus, CheckCircle2 } from "lucide-react";
+import { Plus, Minus, CheckCircle2 } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 const capabilityRows = [

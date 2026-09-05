@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { educationData } from "@/data/education";
-import { GraduationCap, MapPin, Check, User, Sparkles } from "lucide-react";
+import { GraduationCap, MapPin, Check, User } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 export const AboutEducation: React.FC = () => {

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { projectsData, ProjectItem } from "@/data/projects";
-import { ArrowUpRight, Cpu, ArrowRight, Layers, Database, ShieldCheck, Zap } from "lucide-react";
+import { ArrowUpRight, Cpu, Layers, Zap } from "lucide-react";
 import { ProjectDetailModal } from "../ui/ProjectDetailModal";
 import { useSoundEffects } from "../ui/SoundController";
 

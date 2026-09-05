@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { skillsData } from "@/data/skills";
-import { ArrowUpRight, Cpu, Layers, ShieldCheck, Database, Server, Cloud, Users, Zap, Terminal } from "lucide-react";
+import { Cpu, Layers, ShieldCheck, Database, Server, Cloud, Users, Zap, Terminal } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 const pillarIcons = [

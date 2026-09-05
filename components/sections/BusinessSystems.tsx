@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Layers, CheckCircle2, ArrowUpRight } from "lucide-react";
+import { Layers, CheckCircle2 } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 const enterpriseDomains = [

@@ -1,14 +1,10 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import { Users, Check } from "lucide-react";
 import { TeamSport3D } from "../3d/TeamSport3D";
-import { useSoundEffects } from "../ui/SoundController";
 
 export const TeamLeadership: React.FC = () => {
-  const { playHover } = useSoundEffects();
-
   return (
     <section className="relative py-28 md:py-36 px-6 md:px-12 lg:px-20 bg-ivory text-deepInk border-b border-deepInk/10 overflow-hidden select-none">
       {/* Background Soft Glow */}

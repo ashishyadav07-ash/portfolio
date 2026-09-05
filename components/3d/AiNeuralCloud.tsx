@@ -43,7 +43,7 @@ const NeuralScene: React.FC = () => {
     };
   }, []);
 
-  useFrame((state, delta) => {
+  useFrame((state) => {
     const t = state.clock.getElapsedTime();
     if (pointsRef.current) {
       pointsRef.current.rotation.y = t * 0.08;

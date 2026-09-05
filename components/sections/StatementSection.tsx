@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowDownRight, Sparkles } from "lucide-react";
+import { ArrowDownRight } from "lucide-react";
 import { EvolvingSculpture3D } from "../3d/EvolvingSculpture3D";
 
 export const StatementSection: React.FC = () => {
