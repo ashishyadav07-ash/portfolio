@@ -67,6 +67,8 @@ export default function RootLayout({
     "@type": "Person",
     name: "Ashish Yadav",
     jobTitle: "Senior PHP Developer & REST API Specialist",
+    description:
+      "Senior PHP and Laravel developer with 5+ years of experience building high-performance backend systems, REST APIs, MySQL-optimized databases, microservice integrations, and AI-powered features using OpenAI APIs. Based in Nashik, Maharashtra, India.",
     url: "https://ashishyadav.dev",
     address: {
       "@type": "PostalAddress",
@@ -75,6 +77,16 @@ export default function RootLayout({
       addressCountry: "India",
     },
     email: "ashishyadav71998@gmail.com",
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Senior PHP Developer",
+      occupationLocation: {
+        "@type": "Country",
+        name: "India",
+      },
+      skills:
+        "PHP, Laravel, REST API, MySQL, OpenAI API, AWS EC2, Redis, Queue Workers, WHMCS, RBAC, Microservices",
+    },
     alumniOf: [
       {
         "@type": "CollegeOrUniversity",
@@ -83,6 +95,14 @@ export default function RootLayout({
       {
         "@type": "EducationalOrganization",
         name: "Sandip Polytechnic",
+      },
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: "Bachelor of Engineering in Computer Engineering (B.E.)",
+        educationalLevel: "Bachelor's Degree",
       },
     ],
     knowsAbout: [
@@ -95,6 +115,11 @@ export default function RootLayout({
       "Database Optimization",
       "Microservices",
       "Team Leadership",
+      "Redis",
+      "WHMCS",
+      "WhatsApp Business API",
+      "Webhook Security",
+      "Payment Gateway Integration",
     ],
     sameAs: [
       "https://linkedin.com/in/ashishyadav71998",

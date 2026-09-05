@@ -1,25 +1,29 @@
 "use client";
 
 import React from "react";
+import dynamic from "next/dynamic";
 import { SoundProvider } from "@/components/ui/SoundController";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { MinimalNav } from "@/components/ui/MinimalNav";
+// Above-the-fold: static imports for instant LCP
 import { HeroSection } from "@/components/sections/HeroSection";
 import { StatementSection } from "@/components/sections/StatementSection";
 import { WhatIBuild } from "@/components/sections/WhatIBuild";
-import { BackendSection } from "@/components/sections/BackendSection";
-import { ApiSection } from "@/components/sections/ApiSection";
-import { AiSection } from "@/components/sections/AiSection";
-import { DatabasePerformance } from "@/components/sections/DatabasePerformance";
-import { TeamLeadership } from "@/components/sections/TeamLeadership";
-import { CloudInfraSection } from "@/components/sections/CloudInfraSection";
-import { ExperienceSection } from "@/components/sections/ExperienceSection";
-import { CapabilitiesShowcase } from "@/components/sections/CapabilitiesShowcase";
-import { ToolboxSection } from "@/components/sections/ToolboxSection";
-import { PrinciplesSection } from "@/components/sections/PrinciplesSection";
-import { AboutEducation } from "@/components/sections/AboutEducation";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { MinimalFooter } from "@/components/sections/MinimalFooter";
+
+// Below-the-fold: lazy-loaded to reduce initial JS bundle (Three.js is heavy)
+const BackendSection = dynamic(() => import("@/components/sections/BackendSection").then(m => ({ default: m.BackendSection })), { ssr: false });
+const ApiSection = dynamic(() => import("@/components/sections/ApiSection").then(m => ({ default: m.ApiSection })), { ssr: false });
+const AiSection = dynamic(() => import("@/components/sections/AiSection").then(m => ({ default: m.AiSection })), { ssr: false });
+const DatabasePerformance = dynamic(() => import("@/components/sections/DatabasePerformance").then(m => ({ default: m.DatabasePerformance })), { ssr: false });
+const TeamLeadership = dynamic(() => import("@/components/sections/TeamLeadership").then(m => ({ default: m.TeamLeadership })), { ssr: false });
+const CloudInfraSection = dynamic(() => import("@/components/sections/CloudInfraSection").then(m => ({ default: m.CloudInfraSection })), { ssr: false });
+const ExperienceSection = dynamic(() => import("@/components/sections/ExperienceSection").then(m => ({ default: m.ExperienceSection })), { ssr: false });
+const CapabilitiesShowcase = dynamic(() => import("@/components/sections/CapabilitiesShowcase").then(m => ({ default: m.CapabilitiesShowcase })), { ssr: false });
+const ToolboxSection = dynamic(() => import("@/components/sections/ToolboxSection").then(m => ({ default: m.ToolboxSection })), { ssr: false });
+const PrinciplesSection = dynamic(() => import("@/components/sections/PrinciplesSection").then(m => ({ default: m.PrinciplesSection })), { ssr: false });
+const AboutEducation = dynamic(() => import("@/components/sections/AboutEducation").then(m => ({ default: m.AboutEducation })), { ssr: false });
+const ContactSection = dynamic(() => import("@/components/sections/ContactSection").then(m => ({ default: m.ContactSection })), { ssr: false });
+const MinimalFooter = dynamic(() => import("@/components/sections/MinimalFooter").then(m => ({ default: m.MinimalFooter })), { ssr: false });
 
 export default function Home() {
   return (
