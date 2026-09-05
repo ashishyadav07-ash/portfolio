@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ivory: #F5F2EA;
+  --ivory-light: #FAF8F3;
+  --ivory-muted: #EBE6DA;
+  --deep-ink: #111318;
+  --dark-section: #111318;
+  --warm-charcoal: #4D4E53;
+  --cobalt: #3155FF;
+  --coral: #FF6B5A;
+  --amber: #F2B84B;
+  --lavender: #AAB8FF;
+  --soft-blue: #F0F3FA;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F5F2EA;
+  color: #111318;
+  text-rendering: optimizeSpeed;
+}
+
+::selection {
+  background: #3155FF;
+  color: #ffffff;
+}
+
+body {
+  background-color: #F5F2EA;
+  color: #111318;
+  overflow-x: hidden;
+  font-family: var(--font-space-grotesk), Inter, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE6DA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111318;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3155FF;
+}
+
+/* Editorial Oversized Headlines */
+.editorial-hero {
+  font-family: var(--font-space-grotesk), Inter, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+  text-transform: uppercase;
+  transform: translateZ(0);
+}
+
+.editorial-heading {
+  font-family: var(--font-space-grotesk), Inter, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.94;
+  text-transform: uppercase;
+  transform: translateZ(0);
+}
+
+.editorial-sub {
+  font-family: var(--font-jetbrains-mono), JetBrains Mono, monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+/* Minimalist Link Underline Hover */
+.link-hover-expand {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link-hover-expand::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.link-hover-expand:hover::after {
+  width: 100%;
+}
+
+/* Subtle Barely-Visible Grid (3-4% opacity) */
+.editorial-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 19, 24, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 19, 24, 0.035) 1px, transparent 1px);
+}
+
+.editorial-grid-dark {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+/* Hardware-Accelerated Glass Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(17, 19, 24, 0.08);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.glass-panel-dark {
+  background: rgba(24, 26, 32, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.glass-panel-contact {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Button Shimmer Sweep Effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.btn-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shimmer-sweep 4s infinite ease-in-out;
+}
+
+@keyframes shimmer-sweep {
+  0% { left: -100%; }
+  40% { left: 160%; }
+  100% { left: 160%; }
+}

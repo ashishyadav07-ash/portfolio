@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ashish Yadav - Senior PHP Developer Resume</title>
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #111827; line-height: 1.5; padding: 40px; max-width: 800px; margin: 0 auto; }
+    h1 { font-size: 28px; margin-bottom: 4px; text-transform: uppercase; color: #1f2937; }
+    .subtitle { font-size: 14px; font-weight: bold; color: #6b21a8; margin-bottom: 8px; }
+    .contact-info { font-size: 12px; color: #4b5563; margin-bottom: 24px; border-bottom: 2px solid #e5e7eb; padding-bottom: 12px; }
+    h2 { font-size: 16px; text-transform: uppercase; border-bottom: 1px solid #d1d5db; padding-bottom: 4px; margin-top: 20px; color: #374151; }
+    .job { margin-bottom: 16px; }
+    .job-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 14px; }
+    .job-sub { font-size: 12px; color: #4b5563; margin-bottom: 6px; }
+    ul { margin: 0; padding-left: 20px; font-size: 13px; }
+    li { margin-bottom: 4px; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 13px; }
+    @media print { body { padding: 0; } }
+  </style>
+</head>
+<body>
+  <h1>ASHISH YADAV</h1>
+  <div class="subtitle">SENIOR PHP DEVELOPER | LARAVEL &amp; REST API SPECIALIST</div>
+  <div class="contact-info">
+    Nashik, Maharashtra, India | Email: ashishyadav71998@gmail.com | LinkedIn: linkedin.com/in/ashishyadav71998 | 5+ Years Experience
+  </div>
+
+  <h2>Summary</h2>
+  <p style="font-size: 13px;">
+    Senior PHP Developer with 5+ years of production experience specializing in Laravel, RESTful API design, relational database optimization in MySQL, and cloud deployments on AWS EC2. Proven track record leading a team of 4 software developers, reducing application response times by 30%, cutting database server load by 25%, and integrating third-party AI (OpenAI/ChatGPT) and Aadhaar KYC APIs.
+  </p>
+
+  <h2>Professional Experience</h2>
+  
+  <div class="job">
+    <div class="job-header">
+      <span>ESDS SOFTWARE SOLUTION LIMITED</span>
+      <span>2025 — 2026</span>
+    </div>
+    <div class="job-sub">Specialist – Software Development | Nashik, India</div>
+    <ul>
+      <li>Architected automated Aadhaar KYC verification pipelines handling biometric and OTP validation.</li>
+      <li>Integrated OpenAI/ChatGPT API workflows to power AI Domain Search and AI Logo Generation engines.</li>
+      <li>Customized WHMCS cloud orchestration and automated server provisioning modules.</li>
+      <li>Maintained multi-tier inventory and custom CMS backends with high transactional integrity.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span>4FOX SOLUTIONS</span>
+      <span>2022 — 2025</span>
+    </div>
+    <div class="job-sub">Senior PHP Developer | Nashik, India</div>
+    <ul>
+      <li>Led, mentored, and conducted code reviews for an engineering team of 4 software developers.</li>
+      <li>Architected scalable Laravel REST APIs deployed on AWS EC2 Linux environments.</li>
+      <li>Achieved 30% reduction in application response times through caching and query tuning.</li>
+      <li>Reduced database server load by 25% via index profiling and MySQL execution plan optimization.</li>
+      <li>Implemented Role-Based Access Control (RBAC) across critical corporate platforms.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span>DKINC DIGITAL</span>
+      <span>2020 — 2022</span>
+    </div>
+    <div class="job-sub">Software Development Engineer | Nashik, India</div>
+    <ul>
+      <li>Built responsive web applications with PHP MVC, JavaScript, jQuery, and AJAX.</li>
+      <li>Integrated third-party payment gateways and transactional notification pipelines.</li>
+      <li>Engineered relational schemas with normalized MySQL table structures.</li>
+    </ul>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div><strong>Backend:</strong> PHP, Laravel, CodeIgniter, WHMCS, Shopify</div>
+    <div><strong>Databases:</strong> MySQL, Relational Indexing, Query Optimization</div>
+    <div><strong>APIs:</strong> RESTful APIs, OpenAI API, WhatsApp Business API, Aadhaar KYC</div>
+    <div><strong>Cloud &amp; DevOps:</strong> AWS EC2, Linux, Git, SVN, Composer, Postman</div>
+    <div><strong>Frontend:</strong> JavaScript (ES6+), jQuery, AJAX, HTML5, CSS3, Tailwind CSS</div>
+    <div><strong>Architecture:</strong> MVC, SOLID Principles, RBAC, Agile/Scrum, Full SDLC</div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="job">
+    <div class="job-header">
+      <span>Bachelor of Computer Science (BCS)</span>
+      <span>2020</span>
+    </div>
+    <div class="job-sub">Sandip Institute of Technology &amp; Research Centre, Savitribai Phule Pune University</div>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span>Diploma in Information Technology</span>
+      <span>2016</span>
+    </div>
+    <div class="job-sub">Sandip Polytechnic, MSBTE</div>
+  </div>
+</body>
+</html>
