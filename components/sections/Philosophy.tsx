@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { profileData } from "@/data/profile";
-import { Hammer, Network, Gauge, Check } from "lucide-react";
+import { Hammer, Network, Gauge } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 const icons = [Hammer, Network, Gauge];

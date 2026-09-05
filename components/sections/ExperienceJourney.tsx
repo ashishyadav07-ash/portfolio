@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { experienceData, ExperienceItem } from "@/data/experience";
+import { experienceData } from "@/data/experience";
 import { Briefcase, Calendar, MapPin, CheckCircle2, ChevronRight, Layers } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
@@ -106,7 +106,7 @@ export const ExperienceJourney: React.FC = () => {
                       border: `1px solid ${currentItem.accentColor}40`,
                     }}
                   >
-                    CHAPTER {currentItem.chapter} // {currentItem.period}
+                    {`CHAPTER ${currentItem.chapter} // ${currentItem.period}`}
                   </span>
                   <div className="flex items-center gap-1 text-xs font-mono text-zinc-400">
                     <MapPin className="w-3.5 h-3.5 text-zinc-500" />

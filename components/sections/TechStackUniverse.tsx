@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { skillsData, SkillCategory } from "@/data/skills";
-import { Terminal, Database, Server, Cloud, Layout, Wrench, Shield, CheckCircle2 } from "lucide-react";
+import { skillsData } from "@/data/skills";
+import { Terminal, Database, Server, Cloud, Layout, Wrench, CheckCircle2 } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 const categoryIcons: Record<string, React.ElementType> = {

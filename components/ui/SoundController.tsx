@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useRef, createContext, useContext } from "react";
+import React, { useState, useRef, createContext, useContext } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
 interface SoundContextType {

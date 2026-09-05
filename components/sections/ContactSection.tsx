@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import confetti from "canvas-confetti";
-import { Send, CheckCircle2, Mail, MapPin, Sparkles, AlertCircle, Loader2, ArrowUpRight } from "lucide-react";
+import { Send, CheckCircle2, Mail, MapPin, AlertCircle, Loader2 } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 import { socialsData } from "@/data/socials";
 import { EvolvingSculpture3D } from "../3d/EvolvingSculpture3D";
@@ -26,7 +26,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 export const ContactSection: React.FC = () => {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [serverMessage, setServerMessage] = useState("");
-  const { playClick, playSuccess } = useSoundEffects();
+  const { playSuccess } = useSoundEffects();
 
   const {
     register,

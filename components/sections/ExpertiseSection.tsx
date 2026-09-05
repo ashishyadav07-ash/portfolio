@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { expertiseData } from "@/data/expertise";
-import { ArrowUpRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { useSoundEffects } from "../ui/SoundController";
 
 export const ExpertiseSection: React.FC = () => {
